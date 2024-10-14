@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turli xil hisoblagichlar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aliqulov Azizjon</h1>
+
+        <div class="task">
+            <h2>1. Baholash tizimi</h2>
+            <input type="number" id="grade" placeholder="Bahoni kiriting">
+            <button onclick="calculateGrade()">Baholash</button>
+            <p id="gradeResult" class="result"></p>
+        </div>
+
+        <div class="task">
+            <h2>2. Harorat tekshiruvchisi</h2>
+            <input type="number" id="temperature" placeholder="Haroratni kiriting">
+            <button onclick="checkTemperature()">Tekshirish</button>
+            <p id="temperatureResult" class="result"></p>
+        </div>
+
+        <div class="task">
+            <h2>3. Hafta kuni</h2>
+            <input type="number" id="weekday" min="1" max="7" placeholder="Kun raqamini kiriting (1-7)">
+            <button onclick="getWeekday()">Kunni aniqlash</button>
+            <p id="weekdayResult" class="result"></p>
+        </div>
+
+        <div class="task">
+            <h2>4. Taksi narxi hisoblagichi</h2>
+            <input type="number" id="distance" placeholder="Masofani kiriting (km)">
+            <button onclick="calculateTaxiFare()">Hisoblash</button>
+            <p id="taxiFareResult" class="result"></p>
+        </div>
+
+        <div class="task">
+            <h2>5. Internet trafigi hisoblagichi</h2>
+            <input type="number" id="traffic" placeholder="Trafik miqdorini kiriting (GB)">
+            <button onclick="calculateInternetTraffic()">Hisoblash</button>
+            <p id="trafficResult" class="result"></p>
+        </div>
+
+        <div class="task">
+            <h2>6. Yil faslini aniqlash</h2>
+            <input type="text" id="month" placeholder="Oyni kiriting">
+            <button onclick="getSeason()">Faslni aniqlash</button>
+            <p id="seasonResult" class="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
